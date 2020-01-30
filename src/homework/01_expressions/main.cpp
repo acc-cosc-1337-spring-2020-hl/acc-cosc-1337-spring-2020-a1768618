@@ -1,6 +1,6 @@
 ﻿//write include statements
 # include "expressions.h"
-# include <iostream>
+# include <iostream> // use standard library
 
 
 //write namespace using statement for cout
@@ -11,10 +11,12 @@ Call multiply_numbers with 10 and 10 parameter values and display function resul
 */
 int main()
 {
-	int num1 = 10;
-	int num2 = 10;
+	int result = multiply_numbers(10, 10);
+	//int num1 = 10;
+	//int num2 = 10;
 
-	cout << multiply_numbers(num1, num2) << "\n";
+	//cout << multiply_numbers(num1, num2) << "\n";
+	cout << "Result: " << result;
 
 	return 0;
 

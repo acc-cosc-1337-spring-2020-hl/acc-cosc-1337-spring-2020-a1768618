@@ -23,7 +23,7 @@ int main()
 	//display even if number is even
 	if (even)
 	{
-		cout << value << " is even.";
+		cout << value << "is even.";
 	}
 
 	return 0;

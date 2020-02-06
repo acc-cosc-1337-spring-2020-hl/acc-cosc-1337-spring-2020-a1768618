@@ -1,22 +1,21 @@
 //Write the function code that returns the product of hours and hourly_rate.
 #include <iostream>
 
-double OT_PAY_RATE = 1.5;
+
 double gross_pay(double hours, double hourly_rate)
 {
+	double OT_PAY_RATE = 1.5;
+	double gross;
 
 	if (hours <= 40)
 	{
-		double gross = hours * hourly_rate;
-		return gross;
+		gross = hours * hourly_rate;
 	}
-
-	if (hours < 40)
+	else
 	{
-		double gross = hours * OT_PAY_RATE;
-		return gross;
+		gross = 40 * hourly_rate + (hours - 40) * OT_PAY_RATE * hourly_rate;
 	}
 
-	return 0;
+	return gross;
 }
 

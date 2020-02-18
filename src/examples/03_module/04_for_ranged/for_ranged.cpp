@@ -32,7 +32,19 @@ void loop_string_w_auto(const string & str)
 {
 	for (auto s : str)
 	{
+		s = 'b';
 		cout << s << "\n";
+		s = 'z';
+	}
+}
+
+void loop_string_w_auto_ref(string &str)
+{
+	for (auto &s : str)
+	{
+		s = 'b';
+		cout << s << "\n";
+		s = 'z';
 	}
 }
 

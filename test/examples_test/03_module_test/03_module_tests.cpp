@@ -1,9 +1,7 @@
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
 #include "while.h"
-#include "value_ref.h"
-#include "for_ranged.h"
-#include <string>
+#include "vec.h"
 
 TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
@@ -43,4 +41,25 @@ TEST_CASE("Test value of loop_string_w_auto_ref function.")
 
 	REQUIRE(name == "zzz");
 }
+
+TEST_CASE("Loop vestor w index value param.")
+{
+	vector<int>nums{ 9, 10, 99, 5, 67};
+	vector<int>expected{ 9, 10, 99, 5, 67};
+
+	loop_vector_w_index(nums);
+
+	REQUIRE(nums == expected);
+}
+
+TEST_CASE("Loop vestor w index value ref.")
+{
+	vector<int>nums{ 9, 10, 99, 5, 67};
+	vector<int>expected{ 0, 0, 0, 0, 0};
+
+	loop_vector_w_index_ref(nums);
+
+	REQUIRE(nums == expected);
+}
+
 

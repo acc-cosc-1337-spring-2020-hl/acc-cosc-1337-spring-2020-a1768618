@@ -1,7 +1,10 @@
-#include<string>
-#include<vector>
-#include<iostream>
+#include <string>
+#include <vector>
+#include <iostream>
 #include "for_ranged.h"
+#include "value_ref.h"
+#include "for_ranged.h"
+#include <string>
 
 using std::vector;
 using std::cout;

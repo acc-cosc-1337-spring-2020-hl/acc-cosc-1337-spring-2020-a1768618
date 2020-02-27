@@ -1,5 +1,10 @@
 //write include statemetns
+#include "rectangle.h"
+#include <iostream>
+#include <vector>
 
+using std::cout;
+using std::cin;
 /*
 Create a vector of rectangles
 Add 3 Rectangle classes to the vector:
@@ -12,6 +17,18 @@ Iterate the vector and display the Area for each Rectangle on one line and the t
 */
 int main()
 {
+	rect Box;
+	double boxLength, boxHeight;
+
+	// Get box length and width
+	cout << "What is the length? ";
+	cin >> boxLength;
+	cout << "What is the height? ";
+	cin >> boxHeight;
+
+	// Call memeber functions to set box dimensions
 	
+
+
 	return 0;
 }

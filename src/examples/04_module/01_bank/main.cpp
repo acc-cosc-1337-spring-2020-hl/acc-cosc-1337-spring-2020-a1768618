@@ -1,12 +1,14 @@
 #include "bank_account.h"
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 using std::cout;
+using std::vector;
 
 int main()
 {
-	vector<BankAccount> accounts{ BankAccount(100), BankAccount(200), BankAccount(300) };
-	BankAccount account(500);
+
+	vector<BankAccount> accounts{ BankAccount(100), BankAccount(200), 
+		BankAccount(300) }; BankAccount account(500);
 
 	for (auto act : accounts)
 	{
